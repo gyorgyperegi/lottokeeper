@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/lottokeeper/static/css/main.1b1cce19.css",
+    "main.js": "/lottokeeper/static/js/main.8356b284.js",
+    "index.html": "/lottokeeper/index.html",
+    "main.1b1cce19.css.map": "/lottokeeper/static/css/main.1b1cce19.css.map",
+    "main.8356b284.js.map": "/lottokeeper/static/js/main.8356b284.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1b1cce19.css",
+    "static/js/main.8356b284.js"
+  ]
+}
