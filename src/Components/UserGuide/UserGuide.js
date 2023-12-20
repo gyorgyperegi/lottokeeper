@@ -20,6 +20,7 @@ const UserGuide = () => {
 
   return (
     <Container className={"userGuide"}>
+      <ListItem>Click on Profile icon(navbar far right) to pick a user type to start with</ListItem>
       <ListItem>There are two roles: Player and Admin</ListItem>
       <ListItem>They have different menu items in the nav bar</ListItem>
       <ListItem>User can login as a player and can buy tickets but not able to start draw, once the player bought all the tickets then can login as an admin and kick off draw.</ListItem>
