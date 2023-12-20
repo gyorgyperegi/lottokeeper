@@ -23,12 +23,12 @@ describe("Button", () => {
 
     expect(screen.getByRole("button",{name:"Back"})).toBeInTheDocument();
     expect(screen.getByRole("button",{name:"Back"})).toHaveStyle(`width: 150px`);
-    expect(screen.getByRole("button",{name:"Back"})).toHaveStyle(`height: 50px`);
+    expect(screen.getByRole("button",{name:"Back"})).toHaveStyle(`min-height: 50px`);
     expect(screen.getByRole("button",{name:"Back"})).toHaveStyle(`color: white`);
     expect(screen.getByRole("button",{name:"Back"})).toHaveStyle(`background: white`);
   });
 
-  it("should render Button element by default", async () => {
+  it("should call Button handler on click", async () => {
     const mockOnClickHandler = jest.fn();
     render(
       <Button

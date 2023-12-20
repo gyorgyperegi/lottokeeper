@@ -11,7 +11,7 @@ const TicketWrapper = styled.div`
   border-radius: 8px;
   margin: 15px;
   background: var(--champagne);
-  border: ${props => props.borderColor ? `3px solid ${props.borderColor}` : ""};
+  border: ${props => props.bordercolor ? `3px solid ${props.bordercolor}` : ""};
 `;
 const IdWrapper = styled.div`
   font-size: 26px;
@@ -24,7 +24,7 @@ const NumbersWrapper = styled.div`
 const ListWrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
-  justify-content: ${props => props.justifyContent ?? "center"};
+  justify-content: ${props => props.justifycontent ?? "center"};
   overflow: auto;
 `;
 const Price = styled.div`
@@ -58,12 +58,12 @@ const pickBorderColor = (showDifference,id) => {
   }
 }
 
-const CreateTickets = ({placedTickets, showDifference, justifyContent, price}) => {
+const CreateTickets = ({placedTickets, showDifference, justifycontent, price}) => {
   return (
-    <ListWrapper className={"listWrapper"} justifyContent={justifyContent}>
+    <ListWrapper className={"listWrapper"} justifycontent={justifycontent}>
       {placedTickets.map(ticket => {
         return (
-          <TicketWrapper key={`${ticket.id}-wrapper`} borderColor={pickBorderColor(showDifference,ticket.id)}>
+          <TicketWrapper key={`${ticket.id}-wrapper`} bordercolor={pickBorderColor(showDifference,ticket.id)}>
             <IdWrapper key={`${ticket.id}-idwrapper`}>{`${ticket.id}.`}</IdWrapper>
             <NumbersWrapper key={`${ticket.id}-number`}>{`${ticket.numbers},`}</NumbersWrapper>
             {price && (
@@ -74,7 +74,7 @@ const CreateTickets = ({placedTickets, showDifference, justifyContent, price}) =
                 <WinnerNumbersText>lucky numbers:</WinnerNumbersText>
                 {ticket.winnerNumbers.map(winnerNumber => {
                 return (
-                  <WinnerNumbers>{winnerNumber},</WinnerNumbers>
+                  <WinnerNumbers key={`${ticket.id+ticket.winnerNumbers}-winnerNumber`}>{winnerNumber},</WinnerNumbers>
                 )})}
               </WinnerNumbersWrapper>
             )}

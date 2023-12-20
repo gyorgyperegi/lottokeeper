@@ -112,7 +112,6 @@ const DrawResult = ({winnerNumbers,allTickets,setAvailableAmount}) => {
     let moneyTobePaid = 0;
     if(results.winTickets.length !== 0) {
       results.winTickets.forEach(item => {
-        console.log(moneyTobePaid + returnPrice(item.match[0]))
         return moneyTobePaid = moneyTobePaid + returnPrice(item.match[0])
       })
     }
@@ -157,7 +156,7 @@ const DrawResult = ({winnerNumbers,allTickets,setAvailableAmount}) => {
           <MatchWrapper>
             <Matches matchNumber={5}/>
             <TicketsWrapper>
-              <CreateTickets justifyContent={""} price={"10000"} placedTickets={handleWinTickets(5)}/>
+              <CreateTickets justifycontent={""} price={"10000"} placedTickets={handleWinTickets(5)}/>
             </TicketsWrapper>
             <TotalAmountWrapper>
               <TotalAmountText>Total Amount:</TotalAmountText>
@@ -167,7 +166,7 @@ const DrawResult = ({winnerNumbers,allTickets,setAvailableAmount}) => {
           <MatchWrapper>
             <Matches matchNumber={4}/>
             <TicketsWrapper>
-              <CreateTickets justifyContent={""} price={"5000"} placedTickets={handleWinTickets(4)}/>
+              <CreateTickets justifycontent={""} price={"5000"} placedTickets={handleWinTickets(4)}/>
             </TicketsWrapper>
             <TotalAmountWrapper>
               <TotalAmountText>Total Amount:</TotalAmountText>
@@ -177,7 +176,7 @@ const DrawResult = ({winnerNumbers,allTickets,setAvailableAmount}) => {
           <MatchWrapper>
             <Matches matchNumber={3}/>
             <TicketsWrapper>
-              <CreateTickets justifyContent={""} price={"2500"} placedTickets={handleWinTickets(3)}/>
+              <CreateTickets justifycontent={""} price={"2500"} placedTickets={handleWinTickets(3)}/>
             </TicketsWrapper>
             <TotalAmountWrapper>
               <TotalAmountText>Total Amount:</TotalAmountText>
@@ -187,7 +186,7 @@ const DrawResult = ({winnerNumbers,allTickets,setAvailableAmount}) => {
           <MatchWrapper>
             <Matches matchNumber={2}/>
             <TicketsWrapper>
-              <CreateTickets justifyContent={""} price={"500"} placedTickets={handleWinTickets(2)}/>
+              <CreateTickets justifycontent={""} price={"500"} placedTickets={handleWinTickets(2)}/>
             </TicketsWrapper>
             <TotalAmountWrapper>
               <TotalAmountText>Total Amount:</TotalAmountText>
@@ -197,7 +196,7 @@ const DrawResult = ({winnerNumbers,allTickets,setAvailableAmount}) => {
           <MatchWrapper>
           <Matches text={"Lost Tickets:"}/>
             <TicketsWrapper>
-              <CreateTickets justifyContent={""} placedTickets={results.lostTickets}/>
+              <CreateTickets justifycontent={""} placedTickets={results.lostTickets}/>
             </TicketsWrapper>
             <TotalAmountWrapper>
               <TotalAmountText>Total Amount:</TotalAmountText>

@@ -17,7 +17,6 @@ const Container = styled.div`
   background: var(--dark);
   border-bottom: 2px solid var(--champagne);
   box-shadow: 0 0 14px 0 var(--champagne);
-  color: var(--whiteish);
 `;
 const MenuContainer = styled.ul`
   display: flex;

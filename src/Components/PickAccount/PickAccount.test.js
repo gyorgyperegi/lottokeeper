@@ -11,7 +11,7 @@ describe("PickAccount", () => {
   const setName = jest.fn();
   beforeEach(() => {
     render(
-      <PickAccount setName={setName}/>
+      <PickAccount setName={setName} storeUserType={jest.fn()}/>
     );
   });
 

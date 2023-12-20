@@ -40,11 +40,11 @@ const AllTickets = ({playersTickets,role}) => {
 
       <SquareWrapper>
         <InformationWrapper>
-          <Square color={"red"} />
+          <Square color={"white"} />
           <InformationText>Player tickets</InformationText>
         </InformationWrapper>
         <InformationWrapper>
-          <Square color={"blue"} />
+          <Square color={"gold"} />
           <InformationText>Generated tickets</InformationText>
         </InformationWrapper>
       </SquareWrapper>
